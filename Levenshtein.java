@@ -1,3 +1,9 @@
+/*
+
+@author Toren Kochman
+@version 2026-03-16
+
+*/
 public class Levenshtein implements SequenceScoringAlgorithm {
 
     @Override
