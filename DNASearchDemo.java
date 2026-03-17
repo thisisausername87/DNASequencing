@@ -23,6 +23,7 @@ public class DNASearchDemo {
 
         List<SequenceScoringAlgorithm> algorithms = new ArrayList<>();
         algorithms.add(EXAMPLE_ALGORITHM);
+        algorithms.add(new Levenshtein());
 
         AlgorithmComparisonManager manager = new AlgorithmComparisonManager(algorithms);
         List<MatchResult> results = manager.compareAll(query, database);
