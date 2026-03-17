@@ -8,7 +8,7 @@ public class Levenshtein implements SequenceScoringAlgorithm {
     @Override
     public double score(String exampleSequence, String inputSequence) {
         int m = exampleSequence.length();
-        int n = input=Sequence.length();
+        int n = inputSequence.length();
 
         int[][] dp = new int[m + 1][n + 1];
 
