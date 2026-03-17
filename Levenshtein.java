@@ -33,7 +33,7 @@ public class Levenshtein implements SequenceScoringAlgorithm {
             }
         }
 
-        return dp[m][n];
+        return comparison[m][n];
     }
 
     @Override
