@@ -2,13 +2,13 @@ public class Levenshtein implements SequenceScoringAlgorithm {
 
     @Override
     public String getName() {
-        return "Levenshtein Distance";
+        return "Levenshtein Distance Algorithm";
     }
 
     @Override
-    public double score(String databaseSequence, String querySequence) {
-        int m = databaseSequence.length();
-        int n = querySequence.length();
+    public double score(String exampleSequence, String inputSequence) {
+        int m = exampleSequence.length();
+        int n = input=Sequence.length();
 
         int[][] dp = new int[m + 1][n + 1];
 
