@@ -21,7 +21,7 @@ public class Levenshtein implements SequenceScoringAlgorithm {
 
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
-                int cost = (databaseSequence.charAt(i - 1) == querySequence.charAt(j - 1)) ? 0 : 1;
+                int cost = (exampleSequence.charAt(i - 1) == inputSequence.charAt(j - 1)) ? 0 : 1;
 
                 comparison[i][j] = Math.min(
                     Math.min(
